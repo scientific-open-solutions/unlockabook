@@ -1,0 +1,77 @@
+<div id="feedback_div"></div>
+
+
+<script>
+
+
+Phase.set_timer(function(){
+  var survey_response = parent.parent.project_json.responses.filter(function(row){
+    return row.survey == "group_b_session_1.csv";
+  })[0];
+  
+  var these_responses = Object.keys(survey_response).filter(key => key.indexOf("survey_b") !== -1);
+  console.log(these_responses);
+  
+  var _responses = these_responses.filter(key => key.indexOf("_response") !== -1);
+  
+  _responses.forEach(function(_response){
+    console.log(_response);
+    console.log(these_responses.indexOf(_response))
+    //delete(these_responses[these_responses.indexOf(_response)]);
+  });
+  
+  var response_object = {};
+  these_responses.forEach(function(response){
+    var split_response = response.split("_");
+    if(split_response.length == 2){
+      response_object[split_response[1]] = survey_response[response];
+    } else {
+      if(typeof(response_object[split_response[1]]) == "undefined"){
+        response_object[split_response[1]] = [];
+      }
+      response_object[split_response[1]].push(survey_response[response]);
+    }
+  });
+  responses_array = [];
+  Object.keys(response_object).forEach(function(key){
+    responses_array.push(response_object[key]);
+  });
+
+  var questions = Papa.parse(Phase.get_stim("feedback_1.csv"), {
+    header:true
+  }).data;
+  
+  $("#feedback_div").html("");
+  questions.forEach(function(question){
+    var row_responses = responses_array.shift();
+    
+    var this_row = $("<div>");
+    if(question.type == "jumbled"){
+      var response_text = question.text.split("|");
+      var response_string = "";
+      response_text.forEach(function(part){
+        
+        response_string += part;
+        if(row_responses.length > 0){
+          var row_response = row_responses.shift();
+          console.log(row_response);
+          response_string += "<b class='text-info'>" + row_response + "</b> ";
+        }
+        
+        
+      });
+      this_row.append(response_string);
+      
+      $("#feedback_div").append(this_row);
+    }
+  });
+  
+},100);
+
+
+
+
+
+
+//parent.parent.project_json.all_stims["feedback_questions"];
+</script>

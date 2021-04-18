@@ -1,0 +1,8 @@
+item,code,max time,text,shuffle 1,flashcards_sheet,survey,
+0,survey,user,,off,,group_c_info.csv,
+0,instruct,user,You are about to be presented with some flashcards. You have 20 minutes to learn the content. Note that you and your partner will need to get at least 50% correct on flashcards with a red background.,off,,,
+0,flashcard,1200,,off,flashcards2.csv,,
+0,text,18000,Please come back in 5 or more hours (but leave this tab open!),off,,,
+0,instruct,user,You will now have 15 minutes to complete a test of the knowledge from the earlier flashcards. Please start when you're ready,off,,,
+0,survey,900,,off,,groupwork_test.csv,
+0,survey,user,,off,,placement_demographics.csv,

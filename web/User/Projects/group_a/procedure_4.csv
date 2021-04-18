@@ -1,0 +1,23 @@
+item,code,max time,text,shuffle 1,flashcards_sheet,survey,
+0,survey,user,,off,,group_a_info.csv,
+0,instruct,user,"You are about to presented with some cards. <br>
+<br>
+You can choose which to learn at whatever pace you like.<br>
+<br>
+You will be tested on your knowledge of the content on the cards later.<br>
+<br>
+For some of the cards, your scores will be <b>compared to other participants</b>. <br>
+<br>
+<b><span style='background-color:#f50a0a; color:white'>These cards will have a red background behind the text.</b></span><br>
+<br>
+You will not be competing with other participants for the other cards.<br>
+<br>
+If you have any questions do ask the researcher before starting.<br>
+<br>
+You will have 30 minutes to revise the cards.",off,,,
+2,flashcard,1800,This is the start of a new experiment.,off,flashcards_4.csv,,
+0,text,18000,Please come back in 5 or more hours (but leave this tab open!),off,,,
+2,instruct,user,You are about to be asked to complete a test of the knowledge you were learning with flashcards before. You will have 20 minutes to complete these questions.,off,,,
+0,survey,1200,,off,,flashcard_test.csv,
+0,survey,user,,off,,placement_demographics.csv,
+0,survey,user,,off,,group_a_debrief.csv,

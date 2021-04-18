@@ -1,0 +1,28 @@
+cue,answer,font-size,image,image_front,image_back,competition,
+Synaesthesia,"Derived from the greek ‘synth’ (meaning together) and ethesia (sensation).
+The joining of two senses, one sensory or cognitive pathway connects to another which results in involuntary experiences in another sensory or cognitive pathway
+60-100 different forms of synaesthesia have been identified (Simner, 2013)
+",15px,../User/Stimuli/flashcards/synaesthesia.jpg,yes,,no,
+Modified stroop task,"Ink colour is the same as the word written.
+This test identifies if synaesthesia is automatic/pre-attentive.
+Meier & Rothen (2009): This study was able to train non-synaesthetic individuals to behave like synaesthetes",15px,../User/Stimuli/flashcards/stroop.jpg,,yes,yes,
+"Visual search ","A perceptual task which involves scanning for a target among distracting objects, the target number stood out by its unique synaesthetic colour. <br>
+This test identifies if synaesthesia is automatic/pre-attentive",15px,../User/Stimuli/flashcards/visual_search.jpg,,,no,
+"Cross activation theory ","Ramachandran and Hubbard, 2001)
+<br><br>
+Areas in the brain that are involved in colour (V4) are adjacent to the visual word form area (VWFA). They hypothesised that reduced neural pruning causes activation in the V4 area in response to graphemes/words.",15px,../User/Stimuli/flashcards/cross_activation_theory.jpg,yes,,yes,
+"Disinhibited feedback theory ","(Grossenbacher and Lovelace, 2001)
+<br>
+There is stronger feedback from higher-level cortical regions in synaesthetes even though they do have normal connectivity patterns. Suggests that the activation of colour in the brain occurs after the processing of graphemes.<br>
+These cortical regions control language, vision, recognising objects and awareness.",15px,../User/Stimuli/flashcards/disinhibited_feedback.jpg,,yes,no,
+Grapheme/colour synaethesia,The activation of colour (in the brain) when seeing letters. This is the most common type of synaesthesia,15px,../User/Stimuli/flashcards/grapheme_colour.jpg,,,yes,
+"Sound/colour synaesthesia ","The activation of colour (in the brain) when hearing different sounds and noises. There is commonly a link between pitch and lightness (with lightness increasing as pitch does).<br>
+Sound-colour synaesthetes demonstrate increased activity in the left inferior parietal cortex.",15px,../User/Stimuli/flashcards/sound_colour.jpg,yes,,no,
+Lexical /gustatory synaesthesia,"Lexical-gustatory synesthesia causes an experience to an automatic and highly consistent taste or smell. These tastes are evoked by an inducer which stimulates the sensation and activates the taste experience concurrently (Ward, 2007)",15px,../User/Stimuli/flashcards/egg_lexical_gustatory.jpg,,yes,yes,
+Mirror/ touch synaesthesia,"Experiencing the same physical sensations as someone else (in the same part or opposite part of the body). This type of synaesthesia has been associated with increased empathy (Banissy & Ward, 2007) and increased emotion discrimination (Banissy et al., 2011)",15px,../User/Stimuli/flashcards/mirror_touch.jpg,,,no,
+Synaesthetic heritability,"Found to run in families. (Baron-Cohen et al, 1996)<br>
+In monozygotic twins, only one of them were found to have it (so not 100% concordance between monozygotic twins). Also found to skip generations.<br>
+Affects up to 1 in 23 people (Simner et al., 2006)",15px,../User/Stimuli/flashcards/heritability.jpg,yes,,yes,
+Sequence-space synaesthesia,"A form of synaesthesia in which ordinal sequences such as letters of the alphabet or months of the year are perceived to occupy spatial locations in the mind’s eye. As a variety of visuospatial mental imagery, these individual may reflect known fractionation of imagery processes (Price and Mentzani, 2008)",15px,../User/Stimuli/flashcards/sequence_space.jpg,,yes,no,
+Auditory-tactile synaesthesia,"A type of synaesthesia where sound induces physical sensation, which may be perceived in specific parts of the body. Can be accquired from early age, however is a long process of correlating both auditory and sensory tactile inputs with meaningful interpretations (Winawer, 2013)",15px,../User/Stimuli/flashcards/auditory_tactile.jpg,,,yes,
+,,,,,,,

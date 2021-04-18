@@ -1,0 +1,33 @@
+default_master = {
+  "code":  {
+    "default"	 : {},
+    "file"     : "",
+    "filetype" : "",
+    "graphic"  : {
+      "files"  : []
+    },
+    "user"		 : {},
+    "version"  : 0
+  },
+  "data": {
+    "servers": {}
+  },
+  "project_mgmt":  {
+    "any_loaded": 	 		false,
+    "authenticated":   	false,
+    "current_manager": 	"",
+    "project":      	"",
+    "projects":     	{},
+    "incomp_process":  	false,
+    "pipe_position": 	 	0,
+    "pipe_direction":  	"",
+    "versions" :		 		[]
+  },
+  "github": {
+    "organization"  : "",
+    "repository"    : "",
+    "organizations" : {}
+  },
+  "mods":    {},
+  "surveys" : {}
+}

@@ -1,0 +1,52 @@
+item_name,text,type,answers,values,optional,
+Instructions1,"<h1>PARTICIPANT INFORMATION SHEET </h1>
+<h2>Title of Project: Group work Intervention</h2>
+<h3>Name of Lead Investigator:Dr. Anthony Haffey(University of Reading) </h3>
+ 
+<h3>Invitation paragraph </h3>
+You have been invited to take part in a research study. Before you decide whether to take part it is important for you to understand why the research is being done and what it will involve. Please take time to read the following information carefully and discuss it with friends and relatives if you wish to. Ask us if there is anything that is not clear or if you would like more information. Take time to decide whether you wish to take part or not. Thank you for reading this. 
+ 
+ 
+<h3>What is the study about? </h3>
+The study will investigate the effect of group work on subsequent learning. 
+ 
+ 
+<h3>What does the study involve? </h3>
+You will be required to revise a set of flashcards (12) within a group setting. Following this, you will take a test on the content you have learnt from the screencast. This will consist of 12 multiple choice questions. Half of the questions (6) you will be required to get 50% of the questions correct to pass the test. However, on the other half of the questions (6) you will not need a specific percentage of correct answers to pass. 
+ 
+ 
+<h3>Do I have to take part? </h3>
+It is up to you to decide whether or not to take part. If you do decide to take part you will be given this information sheet to keep and be asked to sign a consent form. If you decide to take part you are still free to withdraw at any time during the data collection without giving a reason. 
+ 
+ 
+<h3>I am interested in taking part, what do I do next? </h3>
+Please find a quiet room with minimal distractions. Please ensure you have a good internet connection on a PC / laptop / tablet device. You will need 20 minutes to revise the flashcard in your group.There will then be a gap of 5 hours before completing an online test. You will have 15 minutes to complete the test. Once ready please follow the link to the online study. 
+ 
+ 
+<h3>What if I agree to take part and then change my mind? </h3>
+That is fine. You can contact the researchers if you would like to have any data of yours deleted.
+
+<h3>Will my taking part in this study be kept confidential? </h3>
+All information which is collected about you during the course of the research will be kept on a password protected database and is strictly confidential. You will be given an ID code which will be used instead of your name. 
+ 
+ 
+<h3>Who has reviewed the study? </h3>
+This study has been reviewed and approved by the school ethics committee and has been given a favourable ethical opinion for conduct. 
+ 
+ 
+<h3>How is data secured? </h3>
+No personally identifiable information will be stored for this project. 
+ 
+ 
+This application has been reviewed by the University Research Ethics Committee and has been given a favourable ethical opinion for conduct <br>
+
+Thank you, <br>
+Project Supervisor: Anthony Haffey <br>
+<i>Module convenor: Anthony Haffey (a.haffey@reading.ac.uk) </i>",instruct,,,,
+info_voluntary,I understand that my participation in this study is voluntary and that I may withdraw any time without giving any reason.,checkbox,agree,agree,no
+info_read_sheet,I have read the information sheet about this study and the procedure of the study has been explained to me.,checkbox,agree,agree,no,
+info_ask_question,I have been given the opportunity to ask any questions that I may have about the study and these have been answered to my satisfaction.,checkbox,agree,agree,no,
+info_understand,"I understand that the data collected from me in this study will be preserved and made available in anonymised form, so that they can be consulted and re-used by others.",checkbox,agree,agree,no,
+info_first,First name,text,,,no,
+info_last,Last name,text,,,no,
+,,,,,,

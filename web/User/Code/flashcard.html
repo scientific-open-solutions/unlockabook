@@ -1,0 +1,172 @@
+<!--
+  Flashcard trialtype
+  Authors:
+    Harry Sullivan
+    Dr. Anthony Haffey
+    University of Reading
+    
+---development---
+[
+  {"text":"your practice text"; }
+]
+---development---
+
+
+-->
+
+
+<style>
+.card_btn{
+  width:100%;
+  margin:1px;
+}
+
+.flashcard_box{
+  border: 2px solid teal;
+  width: 600px;
+  height: 400px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 15px;
+}
+
+#everything{
+  margin:auto;
+  width:800px;
+  padding:50px;
+  max-height:600px;
+  text-align: right;
+}
+#flashcard_image{
+  display:none;
+  width: 200px;
+  height:200px
+}
+#flashcard_text{
+  margin:5px;
+  padding:10px;
+}
+</style>
+
+<body>
+<div id="everything">
+  <h5>Perception and Neuroscience Flashcards</h5>
+  <p class="text-right">Select a flashcard from the panel on the left and use the buttons below to flip the card or hide it.</p>
+  <p class="text-right">You will be alerted once 30 minutes have elapsed.</p>
+  <table id="card_table">
+    <tr>
+      <td id="card_list"></td>
+      <td>
+          <div class="flashcard_box" id="box_0">
+            <div id="flashcard_text"></div>
+            <img id="flashcard_image"/>
+          </div>
+      </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>
+        <button type="button" onclick="frontFlip()" class="btn btn-primary">Front</button>
+        <button type="button" onclick="backFlip()" class="btn btn-primary">Back</button>
+      </div>
+    </td>
+  </table>
+</div>
+</body>
+
+<script>
+
+var flashcards_sheet = "{{flashcards_sheet}}".toLowerCase();
+
+if(typeof(parent.parent.project_json.all_stims[flashcards_sheet]) !== "undefined"){
+  var cards_array = parent.parent.Collector.PapaParsed(
+    parent.parent.project_json.all_stims[flashcards_sheet]
+  );
+  
+  if(parent.parent.Project.is_exe){
+    var home_dir = parent.parent.Collector
+      .electron
+      .fs
+      .home_dir();
+    cards_array = cards_array.map(function(row){
+      row.image = row.image.replace("../User", home_dir + "/User")
+      return row;
+    });
+  }
+  
+} else {
+  
+  cards_array = [
+    {
+      answer: "Derived from the greek ‘synth’ (meaning together) and ethesia (sensation).<br>The joining of two senses, one sensory or cognitive pathway connects to another which results in involuntary experiences in another sensory or cognitive pathway↵60-100 different forms of synaesthesia have been identified (Simner, 2013)",
+      cue: "synaesthesia",
+      "font-size": "20px"
+    },
+    {
+      answer: "Ink colour is the same as the word written.<br>This test identifies if synaesthesia is automatic/pre-attentive. <br> Meier & Rothen (2009): This study was able to train non-synaesthetic individuals to behave like synaesthetes",
+      cue: "Modified stroop task",
+      "font-size": "20px"
+    }
+  ]
+}
+
+var current_card = 0; // this acts as a placeholder for the current flashcard
+var no_of_cards = cards_array.length;
+var cues = cards_array.map(function(card, index){
+  return "<button onClick='loadCard(this.id)' class='btn btn-primary btn-sm card_btn' data-bs-toggle='button' autocomplete='off' id=" + index + ">" + card.cue + "</button><br>";
+});
+
+$("#card_list").html(cues);
+function loadCard(clicked_id) {
+  current_card = clicked_id;
+  frontFlip();
+}
+
+function backFlip() {
+  $(".flashcard_box").css(
+    "font-size",
+    cards_array[current_card]["font-size"]
+  );
+  var this_card = cards_array[current_card]["answer"];
+  
+  if(cards_array[current_card].competition == "yes"){
+    $("#flashcard_text").css("background-color","red");
+    $("#flashcard_text").css("color","white");
+  } else {
+    $("#flashcard_text").css("background-color","white");
+    $("#flashcard_text").css("color","black");
+  }
+  
+  if(cards_array[current_card].image_back == "yes"){
+    $("#flashcard_image").attr("src", cards_array[current_card].image);
+    $("#flashcard_image").show();
+  } else {
+    $("#flashcard_image").hide();
+  }
+  $("#flashcard_text").html(this_card);
+}
+function hideMe(){
+  $("#flashcard_text").html("")
+}
+function frontFlip(){
+  var this_card = cards_array[current_card]["cue"];
+  $(".flashcard_box").css("font-size","25px");
+  
+  if(cards_array[current_card].competition == "yes"){
+    $("#flashcard_text").css("background-color","red");
+    $("#flashcard_text").css("color","white");
+  } else {
+    $("#flashcard_text").css("background-color","white");
+    $("#flashcard_text").css("color","black");
+  }
+  
+  if(cards_array[current_card].image_front == "yes"){
+    $("#flashcard_image").attr("src", cards_array[current_card].image);
+    $("#flashcard_image").show();
+  } else {
+    $("#flashcard_image").hide();
+  }
+  
+  $("#flashcard_text").html(this_card);
+}
+</script>

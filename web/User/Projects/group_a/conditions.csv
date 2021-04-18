@@ -1,0 +1,7 @@
+name,notes,stimuli,procedure,fullscreen,welcome,participant_id,end_message,start_message,buffer,scripts,
+condition_1,"""Flashcard group""",stimuli_1.csv,procedure_1.csv,off,,on,,,5,,
+condition_2,"""Flashcard group""",stimuli_1.csv,procedure_2.csv,off,,on,,,5,,
+condition_3,"""Flashcard group""",stimuli_1.csv,procedure_3.csv,off,,on,,,5,,
+condition_4,"""Flashcard group""",stimuli_1.csv,procedure_4.csv,off,,on,,,5,,
+condition_5,"""Flashcard group""",stimuli_1.csv,procedure_5.csv,off,,on,,,5,,
+condition_6,"""Flashcard group""",stimuli_1.csv,procedure_6.csv,off,,on,,,5,,

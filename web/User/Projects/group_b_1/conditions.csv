@@ -1,0 +1,5 @@
+name,notes,stimuli,procedure,fullscreen,welcome,participant_id,end_message,start_message,buffer,scripts,
+condition_1,You can put more detailed notes in this field,stimuli_1.csv,procedure_1.csv,off,,on,,,5,,
+condition_2,You can put more detailed notes in this field,stimuli_1.csv,procedure_2.csv,off,,on,,,5,,
+condition_3,You can put more detailed notes in this field,stimuli_1.csv,procedure_3.csv,off,,on,,,5,,
+condition_4,You can put more detailed notes in this field,stimuli_1.csv,procedure_4.csv,off,,on,,,5,,

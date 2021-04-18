@@ -1,0 +1,25 @@
+item,code,max time,text,shuffle 1,survey,
+0,survey,user,,,group_b_info.csv,
+0,instruct,user,"<iframe width=""640"" height=""360"" src=""https://web.microsoftstream.com/embed/video/7ae4fb32-0de2-4cb8-839f-115dd95689e7?autoplay=false&amp;showinfo=true"" allowfullscreen style=""border:none;""></iframe>",off,,
+2,survey,600,,off,group_b_session_1.csv,
+0,instruct,user,"<h2 class='text-danger'>Do not close this experiment until you get confirmation that your data has been submitted.</h2>
+<h3 class='text-primary'>Here's some clarifications about the previous questions:</h3>
+<h4>Which of these is NOT a function of joint angle receptors? There are two correct answers.</h4>
+<b class=""text-success"">Least active at extreme angles, they are not sensitive to extreme angles.</b>
+<br>
+<br>
+
+<h4>What is the function of a Gamma Motor Neuron?.</h4>
+<b class=""text-success"">As muscle length changes gamma motor neurons innervate (stimulate) the intrafusal fibres to ensure they match the muscle length. They also play a role in adjusting the sensitivity of the muscle spindles.</b>
+<br>
+<br>
+
+<h4>The dorsal column medial lemniscal system is an ascending pathway for <b class='text-primary'>?</b> and <b class='text-primary'>?</b>. The information is carried via neurons and eventually ends up in the <b class='text-primary'>?</b>. Touch and proprioception are <b class='text-primary'>?</b> in these ascending pathways.
+</h4>
+<b class=""text-success"">The dorsal column medial lemniscal system is an ascending pathway that carries information regarding the sensation of touch and for proprioception. The information is carried up the path via neurons and eventually ends up in the somatosensory cortex, where the information is conveyed. Information for touch and proprioception are separated.</b><br>
+<br>
+<h4><b class='text-primary'>?</b> are slow adapting and are found at the <b class='text-primary'>?</b> of the muscle fibre and react to changes of muscle <b class='text-primary'>?</b>
+</h4>
+<b class=""text-success"">Secondary sensory endings are slow adapting and are found at the tail endings of the muscle fibre and react to changes of muscle length.</b>
+
+",off,,
