@@ -1,9 +1,75 @@
+<style>
+#background_image{
+  width:100%;
+  height:100%;
+  padding:0;
+  margin:0;
+  background-attachment: fixed;
+  background-size: 200%;
+  background-image: url("../User/Stimuli/pexels-janko-ferlic-590493.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#book_interface{
+  background-color: white;
+  border-radius: 10px;
+  padding:50px;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin:auto;
+  width:400;
+  height:400;
+}
+#thanks_btn{
+  position:absolute;
+  top:3px;
+  right:3px;
+  width:100px;
+}
+</style>
+<div id="background_image"/>
+  <button id="thanks_btn" class="btn btn-primary form-control">Thanks</button>
+  
+  <div id="book_interface">
+    <select id="select_languages" class="form-control">
+      <option disabled selected>Choose languages</option>
+      <option>French to English</option>
+      <option>English to French</option>
+    </select>
+    <br>
+    <br>
+    <select id="select_book" class="form-control">
+      <option disabled selected>Choose a book</option>
+    </select>
+    <br>
+    <br>
+    <select id="select_chapter" class="form-control">
+      <option disabled selected>Choose a Chapter</option>
+    </select>
+    <br>
+    <br>
+    <button class="btn btn-primary form-control" disabled>Begin</button>
+  </div>
+</div>
+
+<script>
+$("#thanks_btn").on("click", function(){
+  bootbox.alert("background image by Photo by Janko Ferlic from <a href='https://www.pexels.com/photo/light-inside-library-590493/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels' target='_blank'>Pexels</a>");
+})  
+</script>
+<!--
+
+
+
 Which book are you reading
 
 
 to do
-- nice looking background
-- language direction selection
+- center the background image
+- center the selection of options
 - choice of which book
 - choice of which chapter
 - Harry potter example
@@ -12,5 +78,22 @@ to do
 - no buffering
 - no data quality checks at the start
 - allow user to upload a upload a spreadsheet from url?
-- Collector, turn off data quality checks
-- Advertising for support SOS on the right?
+- Advertising for support SOS on the right/top/bottom
+- option to download lists onto your app?
+
+- Turn off study functionality?
+  - Collector, turn off data quality checks
+  - need to switch off the "resume" functionality as if it's an experiment
+  
+- need to have a multiple choice version as starting point
+- and then complete word version to consolidate
+
+- Note that some words might be spoilers, so might need a "spoiler" column
+
+- Need to compare learned words with new words, so the user should have a "learned" word list, right?
+
+- Note that phrases might be appropriate also, not just words
+
+- have a megatable of pairings and how well each user has learned it?
+  
+-->

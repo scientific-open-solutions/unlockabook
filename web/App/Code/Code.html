@@ -128,6 +128,16 @@ $("#code-preview-tab").on("click",function(){
   iframe_variables = eval(
     iframe_content.split("---development---")[1]
   );
+
+  /*
+  * use ../User folder
+  */
+  var home_dir = Collector
+    .electron
+    .fs
+    .home_dir();
+  iframe_content = iframe_content.replaceAll("../User/",  home_dir + "/User/");
+
   if(typeof(iframe_variables) !== "undefined"){
     iframe_variables.forEach(function(row){
       var this_key = Object.keys(row);
