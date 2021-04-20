@@ -4,24 +4,17 @@
   border-radius: 10px;
   padding:50px;
   position: relative;
-  top:15;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin:auto;
-  width:400;
-  height:70;
+  top:25px;
+
+  height:150px;
+  width:600px;
   box-shadow: inset 5px 10px 8px #888888;
 }
 #background_image{
-  position:absolute;
+  position:relative;
   width:600px;
   height:600px;
-  margin:auto;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 50px;
   background-attachment: fixed;
   background-size: 90%;
   background-image: url("../User/Stimuli/pexels-janko-ferlic-590493.jpg");
@@ -45,6 +38,17 @@
   height:400;
   box-shadow: inset 5px 10px 8px #888888;
 }
+#everything{
+  position:absolute;
+  width:600px;
+  height:800px;
+  margin:auto;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: yellow;
+}
 #thanks_btn{
   position:absolute;
   top:   20px;
@@ -52,31 +56,34 @@
   width: 100px;
 }
 </style>
-<div id="advert">Our advert here</div>
-  
-<div id="background_image"/>
-  <button id="thanks_btn" class="btn btn-primary form-control">Thanks</button>
-  <div id="book_interface">
-    <select id="select_languages" class="form-control">
-      <option disabled selected>Choose languages</option>
-      <option>French to English</option>
-      <option>English to French</option>
-    </select>
-    <br>
-    <br>
-    <select id="select_book" class="form-control">
-      <option disabled selected>Choose a book</option>
-    </select>
-    <br>
-    <br>
-    <select id="select_chapter" class="form-control">
-      <option disabled selected>Choose a chapter</option>
-    </select>
-    <br>
-    <br>
-    <button class="btn btn-primary form-control" disabled>Begin</button>
+
+<div id="everything">
+  <div id="advert">Our advert here</div>
+  <div id="background_image"/>
+    <button id="thanks_btn" class="btn btn-primary form-control">Thanks</button>
+    <div id="book_interface">
+      <select id="select_languages" class="form-control">
+        <option disabled selected>Choose languages</option>
+        <option>French to English</option>
+        <option>English to French</option>
+      </select>
+      <br>
+      <br>
+      <select id="select_book" class="form-control">
+        <option disabled selected>Choose a book</option>
+      </select>
+      <br>
+      <br>
+      <select id="select_chapter" class="form-control">
+        <option disabled selected>Choose a chapter</option>
+      </select>
+      <br>
+      <br>
+      <button class="btn btn-primary form-control" disabled>Begin</button>
+    </div>
   </div>
 </div>
+  
 
 <script>
 $("#thanks_btn").on("click", function(){
