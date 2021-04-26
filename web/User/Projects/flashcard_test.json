@@ -6,7 +6,7 @@
   "all_stims": {
     "stimuli_1.csv": "cue,answer,\r\nA,Apple,\r\nB,Banana,\r\n,,"
   },
-  "public_key": "f2LKNVzGNfOTrjCnjY5UYSlq18ZUSNP+sOidmwkFnBw=",
+  "public_key": "fYLDlYnC4uOPKWH7Z2LpABpvcwAXhDOCckSNHfXW2C0=",
   "surveys": {
     "flashcard_test.csv": [
       [
